@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fruit Shopping</title>
+    <!-- Bootstrap CSS -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="#" />
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+    </style>
+      <!-- Custom styles for this template -->
+    <link href="bootstrap/css/global.css" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#" id="pagetitle">Username</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+            <a class="nav-link" href="#" role="button" id="signout" onclick="SignOutFunction()">Sign out</a>
+        </li>
+        </ul>
+    </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <div class="container-fluid">
+        <div class="row">
+          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="sidebar-sticky pt-3">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#" role="button" id="gotoshop" onclick="GoShopFunction()">
+                    <span data-feather="home"></span>
+                    Shopping Cart <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" role="button" id="gotoreview" onclick="GoReviewFunction()">
+                    <span data-feather="file"></span>
+                    Reviews
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#" role="button" id="gotoreport" onclick="GoReportFunction()">
+                    <span data-feather="file"></span>
+                    Report
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+            <div class="col-sm-9">
+                <div class="row row-right-1">
+                    <a class="btn btn-primary mr-2" href="#" role="button" id="searchhistory" onclick="StoreFunction()"> Check Shopping History </a>
+                </div>
+                <h2>Search Purchses In Stores</h2>
+                <table class="table">
+                    <tr>
+                        <td>
+                            <table class="list" id="DateList">
+                                <thead>
+                                <tr>
+                                    <th>Store ID</th>
+                                    <th>Amount Spend</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+        
+    </body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="report.js"></script>
+    
+</html>
